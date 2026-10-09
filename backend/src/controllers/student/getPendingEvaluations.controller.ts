@@ -3,7 +3,7 @@ import AuthenticatedRequest from "../../middlewares/authMiddleware.ts";
 import { Evaluation } from "../../models/Evaluation.ts";
 import { Submission } from "../../models/Submission.ts";
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 export const getPendingEvaluations = async (
   req: AuthenticatedRequest,

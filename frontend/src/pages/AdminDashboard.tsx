@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 type Tab = 'home' | 'course' | 'batch'| 'role' ;
 type Course = {

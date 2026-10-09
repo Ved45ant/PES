@@ -37,7 +37,7 @@ interface UncheckedEvaluationsProps {
   getCardStyles: () => React.CSSProperties;
 }
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 const UncheckedEvaluations: React.FC<UncheckedEvaluationsProps> = React.memo(({
   currentPalette,

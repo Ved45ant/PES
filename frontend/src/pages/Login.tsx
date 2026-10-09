@@ -4,7 +4,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import axios from 'axios';
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 const currentPalette = {
   'accent-purple': '#7c3aed',

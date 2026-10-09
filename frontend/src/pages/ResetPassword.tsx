@@ -4,7 +4,7 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 import axios from 'axios';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 export default function ResetPassword() {
   const navigate = useNavigate();

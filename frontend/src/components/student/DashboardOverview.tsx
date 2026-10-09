@@ -5,7 +5,7 @@ interface DashboardOverviewProps {
   darkMode: boolean;
 }
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 const DashboardOverview: React.FC<DashboardOverviewProps> = ({ darkMode }) => {
   const token = localStorage.getItem('token');

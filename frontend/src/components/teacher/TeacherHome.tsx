@@ -4,7 +4,7 @@ import axios from "axios";
 import { FiBook, FiEdit, FiUsers } from "react-icons/fi";
 import { useState } from "react";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 const lightPalette = {
   'sidebar-bg': '#E6E6FA',

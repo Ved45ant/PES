@@ -83,7 +83,7 @@ interface StudentTicket {
   createdAt: string;
 }
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 // Custom "Pinkish, Lilac, Purple & Yellow" Palette - Revised Mix (Light Mode)
 const lightPalette = {

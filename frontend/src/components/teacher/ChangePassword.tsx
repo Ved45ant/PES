@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 export default function ChangePassword({ onClose }: { onClose: () => void }) {
     const token = localStorage.getItem("token");

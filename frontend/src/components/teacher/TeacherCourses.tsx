@@ -3,7 +3,7 @@ import axios from "axios";
 import { FiDownload, FiUserPlus } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 interface Batch {
   _id: string;

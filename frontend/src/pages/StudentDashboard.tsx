@@ -14,7 +14,7 @@ import DashboardOverview from "../components/student/DashboardOverview";
 import PeerEvaluationsPending from "../components/student/PeerEvaluationsPending";
 import EnrollmentSection from "../components/student/EnrollmentSection";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 const lightPalette = {
     'bg-primary': '#FFFBF6', 'bg-secondary': '#FFFAF2',

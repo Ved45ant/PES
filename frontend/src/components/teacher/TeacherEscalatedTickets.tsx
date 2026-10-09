@@ -10,7 +10,7 @@ interface Ticket {
   resolved: boolean;
 }
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 const BASE_URL = `http://localhost:${PORT}`;
 
 const TeacherEscalatedTickets = () => {

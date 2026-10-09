@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const PDF_SECRET = process.env.JWT_SECRET || "fallbacksecret";
+const PDF_SECRET = process.env.JWT_SECRET!;
 
 export const generatePdfToken = (userId: string, examId: string): string => {
   return jwt.sign(

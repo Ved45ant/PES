@@ -4,7 +4,7 @@ import { FiEdit, FiPlus, FiSend } from "react-icons/fi";
 import { FaRegTrashAlt, FaRegFilePdf, FaRegClone } from "react-icons/fa";
 
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 interface ToastProps {
   message: string;

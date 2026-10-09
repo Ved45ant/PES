@@ -11,7 +11,7 @@ import TeacherCourses from "../components/teacher/TeacherCourses";
 import TeacherExams from "../components/teacher/TeacherExams";
 import ChangePassword from "../components/teacher/ChangePassword";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 // Define both light and dark mode palettes
 const lightPalette = {

@@ -4,9 +4,9 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import nodemailer from 'nodemailer';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'pes-secret';
+const JWT_SECRET = process.env.JWT_SECRET!;
 const OTP_STORE = new Map<string, string>();
-const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
+const FRONTEND_URL = process.env.FRONTEND_URL!
 
 export const sendOtpEmail = async (req: Request, res: Response) : Promise<void> => {
   const { email } = req.body;
@@ -23,14 +23,14 @@ export const sendOtpEmail = async (req: Request, res: Response) : Promise<void> 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.MAIL_SENDER || "noreplypeerevaluationsystem@gmail.com",      
-      pass: process.env.MAIL_PASSWORD ||  "twmnfoksvgwfcegh"   
+      user: process.env.MAIL_SENDER,      
+      pass: process.env.MAIL_PASSWORD
     }
   });
 
   // Email options
   const mailOptions = {
-    from: `"OTP Verification" <noreplypeerevaluationsystem@gmail.com>`,
+    from: `"OTP Verification" <${process.env.MAIL_SENDER}>`,
     to: email,
     subject: 'Your OTP Code',
     html: `<h3>Your OTP is <span style="color:blue">${otp}</span></h3>`
@@ -141,13 +141,13 @@ export const forgotPassword = async (req: Request, res: Response) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: process.env.MAIL_SENDER || "noreplypeerevaluationsystem@gmail.com",      
-          pass: process.env.MAIL_PASSWORD ||  "twmnfoksvgwfcegh"   
+          user: process.env.MAIL_SENDER,      
+          pass: process.env.MAIL_PASSWORD
         }
       });
 
     await transporter.sendMail({
-      from: `"Password Reset" <noreplypeerevaluationsystem@gmail.com>`,
+      from: `"Password Reset" <${process.env.MAIL_SENDER}>`,
       to: email,
       subject: 'Reset your password',
       html: `

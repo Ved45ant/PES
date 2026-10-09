@@ -4,7 +4,7 @@ import { useEffect, useState,type SetStateAction} from 'react';
 import axios from 'axios';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 export default function ForgotPassword() {
   const navigate = useNavigate();

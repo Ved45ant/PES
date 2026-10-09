@@ -4,7 +4,7 @@ import { FaRegSmileBeam, FaRegPaperPlane } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import { PiExam } from "react-icons/pi";
 
-const PORT = import.meta.env.VITE_BACKEND_PORT || 5000;
+const PORT = import.meta.env.VITE_BACKEND_PORT;
 
 type Props = {
   darkMode: boolean;
